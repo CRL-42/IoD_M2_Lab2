@@ -1,20 +1,123 @@
 /* I. Selectors */
 /* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
-
+article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+}
+.style-me1 {
+    color: red;
+}
+#style-me2 {
+    color: blue;
+}
+.style-me1#style-me2 {
+    color: purple;
+}
 /* Put styles for questions 2.1 and 2.2 here */
-
-
+.my-descendants-are-styled p {
+    background-color: red;
+}
+.my-children-are-styled > p {
+    background-color: lightgreen;
+}
 /* II. Box model and common properties */
 /* Put styles for questions 1-8 here */
-
+.box {
+    background-color: cyan;
+    margin:  4px 2px 1px;
+    padding: 4px 2px 1px;
+    width: 50rem;
+    height: 10rem;
+    width: 50px;
+    height: 10px;
+    width: 50vw;
+    height: auto !important;
+    /* 2.3: the text adjusts to the vewport sometimes overflowing the block. */
+    border: 1vh dashed green;
+    border: 1rem double dodgerblue;
+    border: 10px solid violet;
+    box-sizing: content-box;
+    box-sizing: border-box;
+    /* 4.1: border-box reduces the area the content is applied to setting the border to the width & height. */
+    height: 10vh !important;
+    overflow: hidden;
+    overflow: visible;
+    overflow: scroll;
+    overflow: auto;
+    /* 5.2: Hidden, hides any overflow content. Visible, shows overflow and appears to b the defult. Scroll, adds scrole barrs and hides overflow. Auto, works the same as scroll but only when overflow is present. */
+    outline: 10px solid orange;
+    border-radius: 20px;
+    border-radius: 1rem;
+    border-radius: 50%;
+    padding: 19px 15px;
+    background-image: url(/assets/images/img1.png);
+    background-size: contain;
+    background-size: auto;
+    background-size: 50%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    background-position: center;
+}
 
 /* III. Positioning */
 /* Put styles for questions 1-3 here */
-
+.position-absolute {
+    position: absolute;
+    top: 0px;
+    background-color: brown;
+}
+.position-relative {
+    position: relative;
+    background-color: blueviolet;
+    /* 2.3: the relative position container restricts the absolute position elements movement to within the container. */
+    left: 10%;
+    right: 100%;
+    /* 2.4: the left appears to be the dominant parameter. */
+}
+.position-sticky {
+    position: sticky;
+    background-color: orange;
+    top: 0px;
+    bottom: 0px;
+}
 
 /* IV. Styling text */
 /* Put styles for questions 1-10 here */
-
+.text-style {
+    color: aqua;
+    font-size: 1.5rem;
+    font-size: 150%;
+    font-size: 20px;
+    line-height: 0;
+    line-height: 2;
+    line-height: 2rem;
+    line-height: 2px;
+    line-height: 2vh;
+    font-weight: bold;
+    font-weight: 100;
+    font-weight: 500;
+    font-weight: 900;
+    font-family: "kanit", sans-serif;
+    text-align: justify;
+    text-align: end;
+    text-align: center;
+    letter-spacing: 10px;
+    letter-spacing: 5px;
+    letter-spacing: 0px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    word-spacing: 5px;
+    word-spacing: 0px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-decoration: underline;
+    text-decoration: line-through;
+}
 
 /* V. Styling links */
 /* Put styles for questions 1-3 here */
